@@ -42,9 +42,9 @@ let Hamburger = {
 		this.price += Hamburger[size].price;
 		this.calories += Hamburger[size].calories;
 		
-		var checkedBoxes = document.querySelectorAll('input[name=add]:checked');
-		for(var i = 0; i < checkedBoxes.length; i++){
-				var add = checkedBoxes[i].id;
+		let checkedBoxes = document.querySelectorAll('input[name=add]:checked');
+		for(let i = 0; i < checkedBoxes.length; i++){
+				let add = checkedBoxes[i].id;
 			  this.price += Hamburger[add].price;
 				this.calories += Hamburger[add].calories;
 		}
